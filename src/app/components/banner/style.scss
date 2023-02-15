@@ -1,0 +1,71 @@
+@import '../../css-config/variaveis.scss';
+@import '../../css-config/mixins.scss';
+.container-banner{
+
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.989233193277311) 26%, rgba(148,23,182,1) 95%);
+width: 100vw;
+max-width: 100%;
+place-content: center;
+place-items: center;
+gap: 250px;
+display: flex;
+  @include lg{
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .info-banner{
+    padding: 20px;
+    color: $cinzaclaro;
+    
+   h2{
+      font-size: 3rem;
+      font-weight: bold;
+      @include sm{
+        font-size: 2rem;
+        }
+    }
+    .btns-banner{
+     margin-top: 20px;
+     display: flex;
+     gap: 20px;
+      @include lg{
+        place-content: center;
+      }
+     a{
+      cursor: pointer;
+      padding: 15px;
+      text-decoration: none;
+      background: $verde;
+      color: black;
+      border-radius: 10px;
+      transition: 0.3s;
+      &:hover{
+        background: $cinzaclaro;
+      }
+     }
+    }
+  }
+
+  .banner-img{
+    display: flex;
+    place-content: center;
+    padding: 40px 0px;
+    @include sm{
+      padding-bottom: 10px;
+      }
+  img{
+  display: block;
+  max-width: 400px;
+    @include lg{
+      max-width: 350px;
+   
+      }
+    @include sm{
+      max-width: 250px ;
+    
+      }
+    }
+    
+  }
+}

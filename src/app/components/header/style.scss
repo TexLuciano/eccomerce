@@ -1,0 +1,63 @@
+@import "../../css-config/mixins.scss";
+@import "../../css-config/variaveis.scss";
+.container-header{
+  background: $cinzaclaro;
+
+.nav-primaria{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: $cinzaclaro;
+  .title-name{
+    font-size: 1.7rem;
+  }
+  .links{
+
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+   
+  }
+  .links a {
+    text-decoration: none;
+    color: black;
+    pad: 10px;
+  }
+
+  .icons{
+  
+    display: flex;
+    gap: 15px;
+    svg{
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .cart-icon{
+      position: relative;
+
+      span{
+        
+        min-width: 20px;
+        text-align: center;
+        border-radius: 10px;
+        background: $verde;
+        padding: 2.5px;
+        position: absolute;
+        top: -8px;
+        right: -12px;
+        font-size: 12px;
+        line-height: 1;
+
+      }
+    }
+  }
+  
+}
+}
